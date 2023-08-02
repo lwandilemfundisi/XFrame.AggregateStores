@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="XFrame.Aggregates" Version="7.0.3" />
+    <PackageReference Include="XFrame.Persistence" Version="7.0.0" />
+    <PackageReference Include="XFrame.Resilience" Version="7.0.0" />
+  </ItemGroup>
+
+</Project>
