@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using XFrame.AggregateEventPublisher;
 using XFrame.Aggregates;
 using XFrame.Aggregates.Events;
 using XFrame.Aggregates.Events.Serializers;
