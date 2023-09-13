@@ -169,9 +169,9 @@ namespace XFrame.AggregateStores
             IPersistence aggregatePersistence = _persistenceFactory.GetPersistence<TAggregate>();
 
             if (!_aggregateExists)
-                await aggregatePersistence.Save(this, CancellationToken.None);
+                await aggregatePersistence.Save(aggregate, CancellationToken.None);
             else
-                await aggregatePersistence.Update(this, CancellationToken.None);
+                await aggregatePersistence.Update(aggregate, CancellationToken.None);
 
             if (aggregate.OccuredEvents.HasItems())
             {
