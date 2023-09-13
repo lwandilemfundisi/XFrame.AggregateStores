@@ -196,13 +196,13 @@ namespace XFrame.AggregateStores
                 .Select(e => _eventJsonSerializer.Deserialize<TAggregate, TIdentity>(aggregate.Id, e))
                 .ToList();
 
-                ((IList<OccuredEvent>)aggregate.OccuredEvents).Clear();
+                ((IList<IOccuredEvent>)aggregate.OccuredEvents).Clear();
 
                 return domainEvents;
             }
             else
             {
-                ((IList<OccuredEvent>)aggregate.OccuredEvents).Clear();
+                ((IList<IOccuredEvent>)aggregate.OccuredEvents).Clear();
                 return new IDomainEvent<TAggregate, TIdentity>[] { };
             }
         }
