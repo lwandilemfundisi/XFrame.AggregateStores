@@ -4,7 +4,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
 	  <PackageId>XFrame.AggregateStores</PackageId>
-	  <Version>7.0.2</Version>
+	  <Version>7.0.3</Version>
 	  <Authors>Lwandile Mfundisi</Authors>
 	  <Description>XFrame.AggregateStores houses concept of commiting aggregates and publish occured events</Description>
 	  <IsPackable>true</IsPackable>
@@ -13,8 +13,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="XFrame.AggregateEventPublisher" Version="7.0.0" />
-    <PackageReference Include="XFrame.Aggregates" Version="7.0.3" />
+    <PackageReference Include="XFrame.AggregateEventPublisher" Version="7.0.1" />
+    <PackageReference Include="XFrame.Aggregates" Version="7.0.4" />
     <PackageReference Include="XFrame.Persistence" Version="7.0.1" />
     <PackageReference Include="XFrame.Resilience" Version="7.0.0" />
   </ItemGroup>
